@@ -31,5 +31,7 @@ cur.execute(
     );"""
 )
 
+print("Banco de dados atualizado!")
+
 # Fecha a conexão
 con.close()
