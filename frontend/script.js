@@ -69,3 +69,5 @@ function deleteTask(id){
       getTasks();
     });
 }
+
+getTasks()
