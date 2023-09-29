@@ -79,6 +79,9 @@ http://54.175.27.81:8000/
 
 Tentei acessar a url http://54.175.27.81:8000/notes, porém estava dando status 500. Acabei descobrindo que o script de criar tabelas no banco de dados não tinha funcionado. Por isso, conectei ao db via dbeaver e executei o comando de criação e tabelas. 
 
+Imagem da aplicação rodando:
+<img src="./media/backend-funcionando.png">
+
 ## Frontend
 Primeiramente, adaptei o código no arquivo script.js para apontar para a url correta do backend em todos os lugares que foram necessários:
 ````
@@ -118,31 +121,27 @@ E clonei os arquivos frontend do meu repositorio
   
 ````
 
-Deletei o index html presente na pasta /var/www/html e clonei o meu html para dentro dela:
+Copiei o meu html para dentro da pasta do apache:
 ````
   sudo cp ./prova2_mod7/frontend /var/www/html
 ````
 
-# Template para avaliação P2
+Agora, a aplicação é acessível no link http://54.172.237.0/frontend/index.html
 
-Saída esperada após execução do programa:
+Depois, percebi que estava sem estilização. Descobri um erro no código do frontend. Correção:
+````
+  <link rel="stylesheet" href="style.css"> -> <link rel="stylesheet" href="styles.css">
+````
 
-<img src="./media/tela-front.png" display="flex">
+E também mudei a cor da li no arquivo styles.css para #000.
 
-# IMPORTANTE:
+Segue uma imagem do frontend funcionando no EC2 da aws e uma requisição de criar nota realizada com sucesso para a url do backend:
+<img src="./media/front-funcionando.png">
 
-Para colocar o frontend para funcionar, colocar uma máquina EC2 rodando o Apache WebServer.
-Para isso, instalar dentro da EC2:
 
-```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install apache2
-# os arquivos do projeto devem estar em /var/www/html
-git clone https://github.com/Murilo-ZC/Avaliacao-P2-M7-2023-EC.git
-sudo cp ./Avaliacao-P2-M7-2023-EC/frontend /var/www/html
-```
+## Outras imagens
+Instâncias EC2 do frontend e backend:
+<img src="./media/ec2.png" />
 
-Aqui pessoal, os arquivos já estaram disponíveis na porta 80, não necessário redirecionar.
-
-> IMPORTANTE: Verificar as rotas e utilziar o seu próprio repositório com as modificações realizadas.
+Instância RDS:
+<img src="./media/rds.png" />
