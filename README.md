@@ -145,3 +145,9 @@ Instâncias EC2 do frontend e backend:
 
 Instância RDS:
 <img src="./media/rds.png" />
+
+## Vídeo do projeto funcionando
+https://github.com/lyorrei-inteli/prova2_mod7/assets/99191948/65b62696-5af1-4960-96e8-d9931d18dd66
+
+
+
