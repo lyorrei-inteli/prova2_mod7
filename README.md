@@ -135,6 +135,11 @@ Depois, percebi que estava sem estilização. Descobri um erro no código do fro
 
 E também mudei a cor da li no arquivo styles.css para #000.
 
+Dei git pull no meu repositório dentro do EC2 e copiei o html para dentro da pasta apache novamente:
+````
+  sudo cp ./prova2_mod7/frontend /var/www/html
+````
+
 Segue uma imagem do frontend funcionando no EC2 da aws e uma requisição de criar nota realizada com sucesso para a url do backend:
 <img src="./media/front-funcionando.png">
 
