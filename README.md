@@ -79,7 +79,7 @@ http://54.175.27.81:8000/
 
 Tentei acessar a url http://54.175.27.81:8000/notes, porém estava dando status 500. Acabei descobrindo que o script de criar tabelas no banco de dados não tinha funcionado. Por isso, conectei ao db via dbeaver e executei o comando de criação e tabelas. 
 
-## Frontent
+## Frontend
 Primeiramente, adaptei o código no arquivo script.js para apontar para a url correta do backend em todos os lugares que foram necessários:
 ````
 fetch("http://3.95.1.63/notes") -> fetch("http://54.175.27.81:8000/notes")
@@ -122,8 +122,6 @@ Deletei o index html presente na pasta /var/www/html e clonei o meu html para de
 ````
   sudo cp ./prova2_mod7/frontend /var/www/html
 ````
-
-
 
 # Template para avaliação P2
 

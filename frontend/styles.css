@@ -28,7 +28,7 @@ li {
     font-size: 1.5rem;
     margin-bottom: 30px;
     background: var(--cinza-inteli);
-    color: var(--cinza-inteli);
+    color: #000;
 }
 
 button {
